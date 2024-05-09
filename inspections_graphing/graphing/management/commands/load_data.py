@@ -2,7 +2,7 @@ import csv
 
 from django.conf import settings
 from django.core.management.base import BaseCommand
-from graphing.models import Features_Graph
+from graphing.models import Graph
 
 class Command(BaseCommand):
     help = 'Load data from inspection file'
@@ -24,4 +24,4 @@ class Command(BaseCommand):
             counter[x] += 1
 
         for key, value in counter.items():
-            Features_Graph.objects.get_or_create(name=key, count=value)
+            Graph.objects.get_or_create(name=key, count=value)

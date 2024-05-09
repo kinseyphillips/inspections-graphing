@@ -16,7 +16,7 @@ A sample python program that takes in a .csv file from Detect and displays two p
 
 Enviornment: Venv
 Framework: Django
-Others: Django Extensions, Plotly
+Others: Django Extensions, Plotly, Pandas
 
 ### Citations
 
