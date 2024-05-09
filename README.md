@@ -1,7 +1,5 @@
 # inspections-graphing
 
-Second Attempt -- re-doing a sample python program that can create pie graphs for Detect Inspections .csv files
-
 ## Author(s)
 
 Kinsey Phillips
@@ -10,13 +8,15 @@ Kinsey Phillips
 
 ## Description
 
+Second Attempt -- re-doing a sample python program that can create pie graphs for Detect Inspections .csv files
+
 A sample python program that takes in a .csv file from Detect and displays two pie graphs; one of features and the other of defects. For the defects, any that are multi-value are split into two separate data points; any defect with less than 5% occurrence is added to the "other" category.
 
 ## Set-up
 
-Enviornment: venv
+Enviornment: Venv
 Framework: Django
-Others: Plotly
+Others: Django Extensions, Plotly
 
 ### Citations
 
