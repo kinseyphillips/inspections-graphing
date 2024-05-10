@@ -3,8 +3,8 @@
 ## Author(s)
 
 Kinsey Phillips<br/>
-    GitHub: https://github.com/kinseyphillips<br/>
-    Email: kinsey.phillips@detectinspections.com
+* GitHub: https://github.com/kinseyphillips<br/>
+* Email: kinsey.phillips@detectinspections.com
 
 ## Description
 
