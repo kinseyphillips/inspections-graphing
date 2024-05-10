@@ -2,7 +2,7 @@
 
 ## Author(s)
 
-Kinsey Phillips<br/>
+Kinsey Phillips
 * GitHub: https://github.com/kinseyphillips<br/>
 * Email: kinsey.phillips@detectinspections.com
 

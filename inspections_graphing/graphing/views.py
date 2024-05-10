@@ -3,16 +3,17 @@ import plotly.express as px
 from django.shortcuts import render
 from graphing.models import Graph
 
-def pie_graph(request):
+def chart(request):
     data = Graph.objects.all()
     
-    print(data)
-    """
-    fig = px.pie(values=data.count, names=data.name)
+    fig = px.line(
+        x=[d.name for d in data],
+        y=[d.count for d in data],
+        title="Inspections Graph",
+        labels={'x': 'Name', 'y': 'Count'}
+    )
 
-    pie_graph = fig.to_html()
-    context = {'pie_graph': pie_graph}
+    chart = fig.to_html()
+    context = {'chart': chart}
 
     return render(request, 'graphing/graph.html', context)
-    """
-    return(request)

@@ -9,19 +9,15 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         datafile = settings.BASE_DIR / 'data' / '127-data.csv'
-        features = []
         counter = {}
 
         with open(datafile, 'r') as csvfile:
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-                features.append(row['feature'])
+                if row['feature'] not in counter:
+                    counter[row['feature']] = 0
+                counter[row['feature']] += 1
 
-        for x in features:
-            if x not in counter:
-                counter[x] = 0
-            counter[x] += 1
-
-        for key, value in counter.items():
-            Graph.objects.get_or_create(name=key, count=value)
+            for x in counter:
+                Graph.objects.get_or_create(name=x, count=counter[x])
