@@ -2,9 +2,9 @@
 
 ## Author(s)
 
-Kinsey Phillips
--- GitHub: https://github.com/kinseyphillips
--- Email: kinsey.phillips@detectinspections.com
+Kinsey Phillips<br/>
+    GitHub: https://github.com/kinseyphillips<br/>
+    Email: kinsey.phillips@detectinspections.com
 
 ## Description
 
@@ -14,8 +14,8 @@ A sample python program that takes in a .csv file from Detect and displays two p
 
 ## Set-up
 
-Enviornment: Venv
-Framework: Django
+Enviornment: Venv<br/>
+Framework: Django<br/>
 Others: Django Extensions, Plotly, Pandas
 
 ### Citations
@@ -26,4 +26,4 @@ Others: Django Extensions, Plotly, Pandas
 
 ### Date Last Edited
 
-2024-05-09
+2024-05-10
