@@ -4,14 +4,9 @@ from django.shortcuts import render
 from graphing.models import Graph
 
 def chart(request):
-    data = Graph.objects.all()
+    df = Graph.objects.all()
     
-    fig = px.line(
-        x=[d.name for d in data],
-        y=[d.count for d in data],
-        title="Inspections Graph",
-        labels={'x': 'Name', 'y': 'Count'}
-    )
+    fig = px.pie(df, values=[d.count for d in df], names=[d.name for d in df])
 
     chart = fig.to_html()
     context = {'chart': chart}
