@@ -1,0 +1,31 @@
+/*CSS STYLESHEET -- GRAPHING (sample python program)*/
+@import "custom-style.css";
+
+/*TEXT FORMAT*/
+h1, h2, h3, h4, p, a {font-family: var(--font);}
+
+/*HEADER*/
+.banner {
+    padding: 1em;
+    text-align: center;
+    background-color: var(--right-navy);
+    color: var(--left-aqua);
+}
+
+/*.banner img {
+    height: 75%;
+}*/
+
+
+/*BODY*/
+.body-content {
+    padding: 1em;
+}
+
+/*FOOTER*/
+.body-footer {
+    padding: 0.5em;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--mid-teal);
+}

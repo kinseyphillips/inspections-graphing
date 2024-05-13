@@ -6,12 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}{% endblock %}</title>
-
+        <link rel="stylesheet" type="text/css" href="{% static 'graphing/stylesheet.css' %}"/>
         <!-- HTMX -->
         <!-- <script src="https://unpkg.com/htmx.org@1.6.0"></script> -->
     </head>
     <body>
-        <div class="container mt-4">
+        <header class="banner">
+            <!-- <img src="{% static 'graphing/detect-no-text.png' %}" alt="Detect Logo"/> -->
+            <h1>Inspections Graphing</h1>
+        </header>
+        <div class="pie-chart">
             {% block content %}
             {% endblock %}
 

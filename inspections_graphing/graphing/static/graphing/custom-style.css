@@ -1,0 +1,14 @@
+/*CSS VARIABLES -- GRAPHING (sample python program)*/
+
+:root {
+    /*FONTS*/
+    --font: 'Verdana', arial, sans-serif;
+    
+    /*COLOURS*/
+    --left-aqua: #66C5AC;
+    --mid-teal: #168286;
+    --right-navy: #1D4660;
+    --white: #FFFFFF;
+    --grey: #808080;
+    --black: #000000;
+    }
