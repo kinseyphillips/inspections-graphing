@@ -7,14 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{% static 'graphing/stylesheet.css' %}"/>
-        <!-- HTMX -->
-        <!-- <script src="https://unpkg.com/htmx.org@1.6.0"></script> -->
+        <script type="text/javascript">
+            $("#selectAttribute").change(function(){
+                var selected_value = $("#targetDropdown").val();
+            })
+        </script>
     </head>
     <body>
         <header class="banner">
             <!-- <img src="{% static 'graphing/detect-no-text.png' %}" alt="Detect Logo"/> -->
             <h1>Inspections Graphing</h1>
         </header>
+
+        <form class="select-attribute">
+            
+        </form>
+
         <div class="pie-chart">
             {% block content %}
             {% endblock %}
